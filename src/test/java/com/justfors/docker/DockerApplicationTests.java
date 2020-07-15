@@ -79,8 +79,9 @@ class DockerApplicationTests {
     private String makeRequest() {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
+                .url("http://localhost:7000")
                 //.url("http://192.168.99.100:8989")
-                .url("http://192.168.99.101:7777")
+                //.url("http://192.168.99.101:7777")
                 .method("GET", null)
                 .build();
 
